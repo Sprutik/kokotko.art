@@ -1,8 +1,9 @@
 "use client";
 
-import Video from "@/components/Video";
+import SocialLinks from "@/components/social-links";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import Video from "@/components/video";
+import { pacificoFont } from "./fonts";
 
 const videos = [
   {
@@ -35,10 +36,18 @@ export default function VideoPortfolio() {
   return (
     <div className="container mx-auto py-12">
       <main>
-        <h1 className="text-4xl font-bold text-center">Marta Kokotko</h1>
+        <h1
+          className={`${pacificoFont.className} bg-[url('/gradient.jpg')] bg-center bg-clip-text text-transparent -rotate-3 text-6xl font-bold text-center`}
+        >
+          Marta Kokotko
+        </h1>
+
+        <div className="text-xl text-center my-5">Proffesional animator and 3d artist</div>
       </main>
 
-      <Separator className="my-10" />
+      <SocialLinks />
+
+      <h2 className="text-3xl text-center my-5"> Portfolio </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {videos.map((video) => (
@@ -54,9 +63,9 @@ export default function VideoPortfolio() {
         ))}
       </div>
 
-      <Separator className="my-10" />
+      <SocialLinks />
 
-      <div className="text-xl text-center">Made with love {"<3"}</div>
+      <div className={`${pacificoFont.className} text-xl  text-center`}>Made with love {"<3"} </div>
     </div>
   );
 }
