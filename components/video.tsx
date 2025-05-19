@@ -9,7 +9,7 @@ export default function Video({ url }: { url: string }) {
   }, []);
 
   return (
-    <div className="relative pt-[56.25%]">
+    <div className="relative pt-[60%]">
       {isClient && (
         <ReactPlayer
           className="absolute top-0 left-0"

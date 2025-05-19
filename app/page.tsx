@@ -10,25 +10,37 @@ const videos = [
     id: "1",
     title: "Negev",
     description: "Cool animation of big gun.",
-    fileName: "Negev_Reload",
+    fileName: "negev",
   },
   {
     id: "2",
     title: "Negev",
     description: "Cool animation of big gun.",
-    fileName: "Negev_Reload",
+    fileName: "dust",
   },
   {
     id: "3",
     title: "Negev",
     description: "Cool animation of big gun.",
-    fileName: "Negev_Reload",
+    fileName: "Gepard",
   },
   {
     id: "4",
     title: "Negev",
     description: "Cool animation of big gun.",
-    fileName: "Negev_Reload",
+    fileName: "Knife_armory",
+  },
+  {
+    id: "5",
+    title: "Negev",
+    description: "Cool animation of big gun.",
+    fileName: "Karambit",
+  },
+  {
+    id: "6",
+    title: "Negev",
+    description: "Cool animation of big gun.",
+    fileName: "M1911_Armory",
   },
 ];
 
@@ -62,7 +74,8 @@ export default function VideoPortfolio() {
           </Card>
         ))}
       </div>
-
+      <h2 className="text-3xl text-center my-5"> Portfolio2 </h2>
+      
       <SocialLinks />
 
       <div className={`${pacificoFont.className} text-xl  text-center`}>Made with love {"<3"} </div>
